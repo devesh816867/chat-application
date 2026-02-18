@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@property --border-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+
+/* INPUT FIELD */
+.input {
+  @apply w-full bg-zinc-800/60 border border-zinc-700 
+  rounded-lg py-2 pl-10 pr-4 
+  text-zinc-200 placeholder-zinc-500
+  focus:ring-2 focus:ring-blue-600 focus:border-transparent
+  transition-all duration-200;
+}
+
+/* INPUT ICON */
+.auth-input-icon {
+  @apply absolute left-3 top-1/2 -translate-y-1/2 
+  text-zinc-400 size-5;
+}
+
+/* INPUT LABEL */
+.auth-input-label {
+  @apply block text-sm font-medium 
+  text-zinc-300 mb-2;
+}
+
+/* BADGE */
+.auth-badge {
+  @apply inline-flex items-center px-3 py-1 
+  text-xs font-medium rounded-full 
+  bg-blue-900/40 text-blue-400;
+}
+
+/* PRIMARY BUTTON */
+.auth-btn {
+  @apply w-full bg-blue-600 text-white 
+  rounded-lg py-2.5 font-medium
+  hover:bg-blue-700 
+  focus:ring-2 focus:ring-blue-600 
+  transition-all duration-200;
+}
+
+/* LINK BUTTON */
+.auth-link {
+  @apply px-4 py-2 inline-block 
+  bg-blue-900/30 rounded-lg 
+  text-blue-400
+  hover:text-blue-300 
+  text-sm transition-colors;
+}
